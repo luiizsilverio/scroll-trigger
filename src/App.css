@@ -34,7 +34,7 @@
 .relogio{
   width: 100%;
   max-width: 400px;
-  transform: translateX(-700px);
+  transform: translateX(-700px) rotate(180deg);
   opacity: 0;
 }
 

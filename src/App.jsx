@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -10,11 +10,22 @@ import relogio2 from './assets/relogio2.svg'
 
 function App() {
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to(".relogio", {
       x: 0,
-      opacity: 1
+      opacity: 1,
+      rotate: "0deg",
+      scrollTrigger: {
+        trigger: ".items",
+        markers: false,
+        start: "top 400px",
+        end: "bottom 500px",
+        scrub: true
+      }
     })
+
+    return () => gsap.killTweensOf(".relogio");
   }, []);
 
   return (

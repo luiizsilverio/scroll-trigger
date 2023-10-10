@@ -1,7 +1,6 @@
 # SCROLL-TRIGGER
 
 Aplicação desenvolvida durante o vídeo [Criando animações profissionais com React JS e GSAP do zero](https://www.youtube.com/watch?v=JsXoTHyy6j0), no canal do Youtube do Sujeito Programador. <br />
-Para rodar a aplicação, clique [AQUI](https://luiizsilverio.github.io/my-curriculo/). <br />
 
 ## 🚀 Tecnologias
 
